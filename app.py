@@ -50,6 +50,9 @@ async def predict(file: UploadFile = File(...)):
         raise HTTPException(500, str(e))
 
 
+
+
+
 @app.get("/")
 def root():
     return {"status": "API ONNX funcionando 🚀"}
